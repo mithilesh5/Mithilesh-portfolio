@@ -153,6 +153,31 @@ a {
     .tool:nth-child(7) { animation-delay: 1.4s; }
     .tool:nth-child(8) { animation-delay: 1.6s; }
 </style>
+<style>
+    .linkedin-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background: #0077B5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .linkedin-button:hover {
+        transform: scale(1.1);
+    }
+
+    .linkedin-button img {
+        width: 30px;
+        height: 30px;
+    }
+</style>
 footer {
     margin-top: 20px;
     padding: 10px;
