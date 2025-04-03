@@ -67,7 +67,7 @@ a {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4 columns */
         grid-template-rows: repeat(2, auto); /* 2 rows */
-        gap: 20px;
+        gap: 15px;
         justify-content: center;
         align-items: center;
         max-width: 800px;
@@ -78,20 +78,20 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: black;
-        padding: 15px;
-        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5); /* Transparent black */
+        padding: 10px; /* Smaller box */
+        border-radius: 8px;
     }
 
     .tool img {
-        width: 80px;
-        height: 80px;
+        width: 60px; /* Smaller icon */
+        height: 60px;
         object-fit: contain;
     }
 
     .tool p {
-        margin-top: 8px;
-        font-size: 16px;
+        margin-top: 5px;
+        font-size: 14px; /* Slightly smaller text */
         font-weight: bold;
         color: white;
     }
