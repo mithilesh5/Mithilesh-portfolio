@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mithilesh Bawane | SRE Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Mithilesh Bawane</h1>
+        <h1><span id="typing"></span></h1>
         <p>Site Reliability Engineer | DevOps | Cloud Security</p>
+        <a href="Mithilesh_Bawane_Resume.pdf" download class="resume-btn">Download Resume</a>
     </header>
     
     <section id="about">
@@ -19,26 +21,37 @@
 
     <section id="experience">
         <h2>Work Experience</h2>
-        <ul>
-            <li><strong>Qualys Security Tech Services Pvt. Ltd.</strong> - Site Reliability Engineer (Oct 2022 - Present)</li>
-            <li><strong>Veritas Technologies LLC</strong> - Technical Support Engineer (Aug 2021 - Oct 2022)</li>
-            <li><strong>Infosys Ltd</strong> - Senior Systems Engineer (Mar 2020 - Aug 2021)</li>
-            <li><strong>Softenger India Pvt. Ltd.</strong> - Linux System Administrator (May 2018 - Feb 2020)</li>
-        </ul>
+        <div class="card">
+            <p><strong>Qualys Security Tech Services Pvt. Ltd.</strong> - Site Reliability Engineer (Oct 2022 - Present)</p>
+            <p><strong>Veritas Technologies LLC</strong> - Technical Support Engineer (Aug 2021 - Oct 2022)</p>
+            <p><strong>Infosys Ltd</strong> - Senior Systems Engineer (Mar 2020 - Aug 2021)</p>
+            <p><strong>Softenger India Pvt. Ltd.</strong> - Linux System Administrator (May 2018 - Feb 2020)</p>
+        </div>
     </section>
 
     <section id="certifications">
         <h2>Certifications</h2>
-        <ul>
-            <li>AWS Solutions Architect - Associate</li>
-            <li>Microsoft Azure Fundamentals (AZ-900)</li>
-            <li>GitHub Foundations</li>
-            <li>Certified Kubernetes Administrator (In Progress)</li>
-        </ul>
+        <div class="card">
+            <ul>
+                <li>AWS Solutions Architect - Associate</li>
+                <li>Microsoft Azure Fundamentals (AZ-900)</li>
+                <li>GitHub Foundations</li>
+                <li>Certified Kubernetes Administrator (In Progress)</li>
+            </ul>
+        </div>
     </section>
 
     <footer>
         <p>Contact: <a href="mailto:mithileshbawane.mb@gmail.com">mithileshbawane.mb@gmail.com</a></p>
     </footer>
+
+    <script>
+        var typed = new Typed("#typing", {
+            strings: ["Mithilesh Bawane", "Site Reliability Engineer", "Cloud Security Specialist"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
 </body>
 </html>
