@@ -154,28 +154,30 @@ a {
     .tool:nth-child(8) { animation-delay: 1.6s; }
 </style>
 <style>
-    .linkedin-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 30px;  /* Smaller button */
-        height: 30px;  
+    .handshake-link {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #0077B5;
+        padding: 10px 20px;
+        border: 2px solid #0077B5;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+
+    .handshake-link:hover {
+        animation: shake 0.5s ease infinite;
         background: #0077B5;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
+        color: white;
     }
 
-    .linkedin-button:hover {
-        transform: scale(1.1);
-    }
-
-    .linkedin-button img {
-        width: 15px;  /* Make icon very small */
-        height: 15px;
+    @keyframes shake {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(-5deg); }
+        50% { transform: rotate(5deg); }
+        75% { transform: rotate(-5deg); }
+        100% { transform: rotate(0deg); }
     }
 </style>
 footer {
