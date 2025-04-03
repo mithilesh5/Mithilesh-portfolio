@@ -1,19 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
 }
+
 header {
-    background-color: #1f1f1f;
+    background-color: rgba(31, 31, 31, 0.9);
     padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 h1, h2 {
-    color: #00aaff;
+    color: #00c3ff;
+    font-weight: bold;
 }
+
 a {
-    color: #00aaff;
+    color: #00c3ff;
     text-decoration: none;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    color: #121212;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    background-color: #0086b3;
+    color: white;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(31, 31, 31, 0.9);
 }
